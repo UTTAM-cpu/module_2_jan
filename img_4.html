@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coupon generator</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        h2{
+            font-size: 100px;
+        }
+        .img{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Your coupon Number is :</h1>
+    </div>
+    <div class="float">
+        <h2 id="coupon">your coupon is :</h2>
+    </div>
+    <div class="img">
+        <img src="./images/congo_img.avif" alt="">
+    </div>
+    <script>
+        document.getElementById('coupon').innerHTML = localStorage.getItem("coupon");
+    </script>
+</body>
+</html>
